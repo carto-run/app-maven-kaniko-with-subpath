@@ -24,4 +24,6 @@ jobs:
           java-version: ${{matrix.java}}
 
       - name: Test
-        run: mvn --no-transfer-progress test
+        run: |
+          cd my-subpath
+          mvn --no-transfer-progress test
