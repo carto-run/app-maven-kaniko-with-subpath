@@ -2,9 +2,14 @@
 version: 2
 updates:
   - package-ecosystem: "maven"
-    directory: "my-subpath"
+    directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      spring-boot:
+        patterns:
+          - "spring-boot*"
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
