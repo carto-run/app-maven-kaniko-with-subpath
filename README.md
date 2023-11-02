@@ -13,6 +13,7 @@ tanzu apps workload create app-maven-kaniko-with-subpath \
   --label app.kubernetes.io/part-of=app-maven-kaniko-with-subpath \
   --type web \
   --param dockerfile=my-subpath/Dockerfile \
+  --param docker_build_context=my-subpath \
   --sub-path my-subpath \
   --yes
 ```
